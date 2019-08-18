@@ -29,8 +29,8 @@ class TappyParser:
   # reader/writer from the keyboard to the file, and finaly to the FTP server.
   #
   # Output:
-  #  - [dict]: dictionary with the keys `good_lines` and `bad_lines`. The values are arrays of strings with each line
-  #            from the file (each line as a string)
+  # - [dict]: dictionary with the keys `good_lines` and `bad_lines`. The values are arrays of strings with each line
+  #           from the file (each line as a string)
   def parse(self):
     with open(self.file_path, 'r') as file:
       good_lines = []
