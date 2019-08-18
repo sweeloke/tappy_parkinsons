@@ -21,6 +21,12 @@ RAW_DATA_FOLDER_PATH = f'{BASE_DATA_FOLDER_PATH}/raw_downloaded'
 from util.project_setup import ProjectSetup
 ```
 
+The other small change is in the util/project_setup.py ensuring we have the correct `home_dir` configured:
+```python
+class ProjectSetup:
+  home_dir = '/content/gdrive/My Drive/tappy_parkinsons'
+```
+
 ## File and folder structure
 
 ### Folder: colab_notebooks
