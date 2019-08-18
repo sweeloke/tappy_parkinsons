@@ -3,12 +3,18 @@ import re
 # Class responsible for parsing tappy files. It loads the tappy data in memory separating good records (paseable lines)
 # and bad records (unparseable lines). The main function here is `parse()` which does the whole heavy-lifting.
 #
-# The big takeaway here is the all good lines will:
-#  - Have the expected user. The one which the file was named
+# The big takeaway here is that all good lines will:
+#  - Have the expected user. The one which the file was named after
 #  - No null values for any field
 #  - No unexpected format for any field
 #  - Will be ready to be loaded in a dataframe
 class TappyParser:
+  # The class initializer
+  #
+  # Input:
+  # - file_path [string]: the full file path of the tappy file that will be parsed
+  # - verbose [int]: (optional) the verbosity level. The higher the number, more verbose will be.
+  #                  By default, this variable is initialized with 0
   def __init__(self, file_path, verbose=0):
     self.file_path = file_path
     self.verbose = verbose
