@@ -6,17 +6,13 @@ This project was written on top of [Google Colab](https://colab.research.google.
 Inside the notebooks we always start with this cell to configure the locations and basic setup.
 Please, don't forget to adjust your `HOME_DIR` to follow your Google Drive location for the project.
 ```python
-# First we must mount google drive 
+# First we must mount google drive
 from google.colab import drive
 GDRIVE_BASE_PATH = '/content/gdrive'
-drive.mount(GDRIVE_BASE_PATH, force_remount=True)
-
-# Adjust your `HOME_DIR` according to your google drive location
-HOME_DIR = f'{GDRIVE_BASE_PATH}/My Drive/tappy_parkinsons'
-BASE_DATA_FOLDER_PATH = f'{HOME_DIR}/data'
-RAW_DATA_FOLDER_PATH = f'{BASE_DATA_FOLDER_PATH}/raw_downloaded'
+drive.mount(GDRIVE_BASE_PATH)
 
 # Loading our project setup
+HOME_DIR = f'{GDRIVE_BASE_PATH}/My Drive/tappy_parkinsons'
 % cd $HOME_DIR
 from util.project_setup import ProjectSetup
 ```
