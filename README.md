@@ -1,1 +1,42 @@
-# tappy_parkinsons
+# Diagnosis from the keyboard
+
+## Prerequisites
+This project was written on top of [Google Colab](https://colab.research.google.com) and Google Drive, so the easiest way to run or play with it, is using these tools instead of trying to setup locally on your computer.
+
+Inside the notebooks we always start with this cell to configure the locations and basic setup.
+Please, don't forget to adjust your `HOME_DIR` to follow your Google Drive location for the project.
+```python
+# First we must mount google drive 
+from google.colab import drive
+GDRIVE_BASE_PATH = '/content/gdrive'
+drive.mount(GDRIVE_BASE_PATH, force_remount=True)
+
+# Adjust your `HOME_DIR` according to your google drive location
+HOME_DIR = f'{GDRIVE_BASE_PATH}/My Drive/tappy_parkinsons'
+BASE_DATA_FOLDER_PATH = f'{HOME_DIR}/data'
+RAW_DATA_FOLDER_PATH = f'{BASE_DATA_FOLDER_PATH}/raw_downloaded'
+
+# Loading our project setup
+% cd $HOME_DIR
+from util.project_setup import ProjectSetup
+```
+
+## File and folder structure
+
+### Folder: colab_notebooks
+All the Colab Notebooks are in this folder. They were named prefixed by the order that we should run then:
+
+#### 01_downloading.ipynb
+To automatically download the whole dataset from Kaggle to your local drive and unzip all files. When you finish running this notebook, you should have all raw data available.
+
+#### 02_loading_and_exploring.ipynb
+To get familiar with the data. In this notebook we load the raw data into pandas and start understanding its structure, nuances etc. This is our inial exploration step.
+
+#### 03_feature_engineering.ipynb
+To generate the desired features that will be consumed by our ML models. Here we aggregate raw data from the tappy and users datasets, resulting in a close-to-final dataset that the ML algoriths will use to generate predictions.
+
+#### 04_pipeline_and_models.ipynb
+To train models and produce predictions. Here we have the final ML steps. We split the dataset, create a pipeline to do some preprocessing and training different models. Last but not least, we evaluate the different models and define our final model architecture.
+
+### Folder: util
+We created some utility library classes to simplify some colab notebooks. All the parsing logic to read the raw data from the files is written in these classes. By doing that, the notebooks can focus on exploration instead of coding, so the complexity is encapsulated inside the libraries.
