@@ -1,5 +1,11 @@
 # Diagnosis from the keyboard
 
+## Presentation: 
+Presentation doc: tappy_presentation.pdf/tappy_presenation.pptx
+
+The youtube link is: https://youtu.be/DbAyfjLckXA
+
+
 ## Prerequisites
 This project was written on top of [Google Colab](https://colab.research.google.com) and Google Drive, so the easiest way to run or play with it, is using these tools instead of trying to setup locally on your computer.
 
@@ -44,7 +50,4 @@ To train models and produce predictions. Here we have the final ML steps. We spl
 ### Folder: `util`
 We created some utility library classes to simplify some colab notebooks. All the parsing logic to read the raw data from the files is written in these classes. By doing that, the notebooks can focus on exploration instead of coding, so the complexity is encapsulated inside the libraries.
 
-## Presentation: 
-Presentation doc: tappy_presentation.pdf
 
-The youtube link is: https://youtu.be/DbAyfjLckXA
