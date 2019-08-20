@@ -3,7 +3,7 @@
 ## Presentation: 
 Presentation doc: tappy_presentation.pdf/tappy_presentation.pptx
 
-The youtube link is: https://youtu.be/DbAyfjLckXA
+Youtube: https://youtu.be/DbAyfjLckXA
 
 
 ## Prerequisites
