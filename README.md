@@ -45,8 +45,6 @@ To train models and produce predictions. Here we have the final ML steps. We spl
 We created some utility library classes to simplify some colab notebooks. All the parsing logic to read the raw data from the files is written in these classes. By doing that, the notebooks can focus on exploration instead of coding, so the complexity is encapsulated inside the libraries.
 
 ## Presentation: 
-This is the presentation as part of the project submission: 
-
 Presentation doc: tappy_presentation.pdf
 
 The youtube link is: https://youtu.be/DbAyfjLckXA
