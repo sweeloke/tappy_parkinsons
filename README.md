@@ -1,7 +1,7 @@
 # Diagnosis from the keyboard
 
 ## Presentation: 
-Presentation doc: tappy_presentation.pdf/tappy_presenation.pptx
+Presentation doc: tappy_presentation.pdf/tappy_presentation.pptx
 
 The youtube link is: https://youtu.be/DbAyfjLckXA
 
