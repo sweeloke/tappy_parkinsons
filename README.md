@@ -2,7 +2,7 @@
 
 This project is to analyze a user's typing patterns and predict if the user has Parkinson's disease. 
 
-dataset: https://www.kaggle.com/valkling/tappy-keystroke-data-with-parkinsons-patients)
+Dataset: https://www.kaggle.com/valkling/tappy-keystroke-data-with-parkinsons-patients)
 
 
 ## Presentation: 
